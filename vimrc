@@ -43,6 +43,11 @@ set fileformat=unix
 " buffers
 set fileformats=unix,dos
 
+" remove the temp files
+set nobackup
+set nowritebackup
+set noswapfile
+
 " ---------------------- EDITING ----------------------
 
 " indentation
