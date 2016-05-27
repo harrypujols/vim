@@ -14,6 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'flazz/vim-colorschemes'
+Plug 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
