@@ -7,7 +7,7 @@ vim settings to carry around
 
 ~~The .vimrc file should go where it should be.~~
 
-TODO work on the placement of the file
+TODO: work on the placement of the file
 
 ## after deploying
 - Install plugins `vim +PluginInstall`
