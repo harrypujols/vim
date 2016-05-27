@@ -6,6 +6,7 @@ vim settings to carry around
 - Then `gulp`
 
 ~The .vimrc file should go where it should be.~
+
 TODO work on the placement of the file
 
 ## after deploying
