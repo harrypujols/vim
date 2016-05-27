@@ -71,14 +71,6 @@ set formatoptions=qrn1
 set wrapmargin=0
 set colorcolumn=+1
 
-" allows to put a custom .vim file in every directory
-" to load commands and options specific to that directory.
-let b:thisdir=expand("%:p:h")
-let b:vim=b:thisdir."/.vim"
-if (filereadable(b:vim))
-    execute "source ".b:vim
-endif
-
 " ---------------------- APPEARANCE ----------------------
 
 " set Airline
@@ -118,3 +110,13 @@ set incsearch
 
 " highlight matching brackets
 set showmatch
+
+" -------------------- EXTENSIONS --------------------
+
+" allows to put a custom .vim file in every directory
+" to load commands and options specific to that directory.
+let b:thisdir=expand("%:p:h")
+let b:vim=b:thisdir."/.vim"
+if (filereadable(b:vim))
+    execute "source ".b:vim
+endif
