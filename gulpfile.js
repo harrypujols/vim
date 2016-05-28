@@ -8,7 +8,7 @@ gulp.task('vim', function() {
 });
 
 gulp.task('vimcustom', function() {
-  gulp.src('./dotfiles/vimrc.custom')
+  gulp.src('./dotfiles/vimrcc')
     .pipe(rename('.vimrc.custom'))
     .pipe(gulp.dest('~/'))
 });
