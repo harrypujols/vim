@@ -13,5 +13,12 @@ gulp.task('vimcustom', function() {
     .pipe(gulp.dest('~/'))
 });
 
+gulp.task('vimwriter', function() {
+  gulp.src('./dotfiles/vimrcwrite')
+    .pipe(rename('.vim'))
+    .pipe(gulp.dest('~/'))
+});
 
-gulp.task('default', ['vim', 'vimcustom']);
+
+
+gulp.task('default', ['vim', 'vimcustom', 'vimwriter']);
