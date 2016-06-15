@@ -91,7 +91,7 @@ colorscheme Tomorrow-Night
 
 " set default font in mac vim and gvim
 " remember to download the font from Powerline
-set guifont=Inconsolata\ for\ Powerline:h16
+set guifont=Inconsolata\ for\ Powerline\ 16
 
 " Allow powerline symbols to show up
 let g:airline_powerline_fonts = 1
