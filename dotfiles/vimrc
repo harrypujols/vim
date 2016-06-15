@@ -13,9 +13,12 @@ Plugin 'gmarik/Vundle.vim'
 " start plugin defintion
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-scripts/HTML-AutoCloseTag' 
+Plugin 'scrooloose/nerdTree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " All Plugins must be added before the following line
 call vundle#end()            " required
@@ -55,7 +58,8 @@ set expandtab       " use spaces instead of tabs
 set autoindent      " autoindent based on line above, works most of the time
 set smartindent     " smarter indent for C-like languages
 set shiftwidth=4    " when reading, tabs are 4 spaces
-set softtabstop=4   " in insert mode, tabs are 4 spaces
+set softtabstop=2   " in insert mode, tabs are 2 spaces
+set shiftwidth=2    " tabs the selected blocks 2 spaces each time
 
 " show the cursor position all the time
 set ruler
@@ -83,7 +87,7 @@ set laststatus=2
 
 " set theme
 set background=dark
-colorscheme tomorrow-night
+colorscheme Tomorrow-Night
 
 " set default font in mac vim and gvim
 " remember to download the font from Powerline
@@ -130,3 +134,9 @@ endif
 if filereadable(expand("~/.vimrc.custom"))
     source ~/.vimrc.custom
 endif
+
+" executes NERDtree at startup
+autocmd vimenter * NERDTree
+
+" quit vim and NERDtree when it's the only open tab
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
