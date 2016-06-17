@@ -2,17 +2,23 @@
 vim settings to carry around
 
 ## to deploy
+- Make sure you got Vundle installed
+```bash
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+- Get [Node.js][1]
 - Run `npm install`
 - Then `gulp`
 
-~~The .vimrc file should go where it should be.~~
-
-TODO: work on the placement of the file
-
 ## after deploying
-- Install plugins `vim +PluginInstall`
-- Remember to get fonts from https://github.com/powerline/fonts - Probably, also install
-  [Powerline][1]
-- Profit
+- You extend the config by running `gulp extend`
+- Install the [Powerline fonts][2] by running
+```bash
+git clone git@github.com:powerline/fonts.git
+cd fontd
+./install.sh
+```
+- Profit.
 
-[1]: https://powerline.readthedocs.io/en/master/installation/osx.html#vim-installation
+[1]: https://nodejs.org
+[2]: https://powerline.readthedocs.io/en/master/installation/osx.html#vim-installation
