@@ -125,20 +125,7 @@ set incsearch
 " highlight matching brackets
 set showmatch
 
-" -------------------- EXTENSIONS --------------------
-
-" allows to put a custom .vim file in every directory
-" to load commands and options specific to that directory.
-let b:thisdir=expand("%:p:h")
-let b:vim=b:thisdir."/.vim"
-if (filereadable(b:vim))
-    execute "source ".b:vim
-endif
-
-" extends settings to .vimrc_profile if available
-if filereadable(expand("~/.vimrc_profile"))
-    source ~/.vimrc_profile
-endif
+" ---------------------- TABS -----------------------
 
 " executes NERDtree at startup
 autocmd vimenter * NERDTree
@@ -151,3 +138,20 @@ let g:nerdtree_tabs_open_on_console_startup=1
 
 " NERDTree tabs focus on file when opening
 let g:nerdtree_tabs_focus_on_files=1
+
+" -------------------- EXTENSIONS --------------------
+
+" extends settings to .vimrc_profile if available
+if filereadable(expand("~/.vimrc_profile"))
+    source ~/.vimrc_profile
+endif
+
+" allows to put a custom .vim file in every directory
+" to load commands and options specific to that directory.
+let b:thisdir=expand("%:p:h")
+let b:vim=b:thisdir."/.vim"
+if (filereadable(b:vim))
+    execute "source ".b:vim
+endif
+
+

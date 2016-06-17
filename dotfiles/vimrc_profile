@@ -4,6 +4,9 @@
 " set guifont=Cousine\ for\ Powerline\ 16
 " set guifont=Menlo:h14
 
+" uncomment below for background color
+" highlight Normal ctermfg=grey ctermbg=white
+
 " in case Powerline fonts aren't installed
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
