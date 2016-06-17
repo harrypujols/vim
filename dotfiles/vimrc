@@ -19,6 +19,8 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-scripts/HTML-AutoCloseTag' 
 Plugin 'scrooloose/nerdTree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'shougo/neocomplete'
 
 " All Plugins must be added before the following line
 call vundle#end()            " required
@@ -72,13 +74,16 @@ set matchpairs+=<:>
 let g:user_emmet_leader_key='<Tab>'
 
 " Treat <li> and <p> tags like the block tags they are
-let g:html_indent_tags = 'li\|p'
+let g:html_indent_tags='li\|p'
 
 " no lines longer than 100 cols
 set textwidth=100
 set formatoptions=qrn1
 set wrapmargin=0
 set colorcolumn=+1
+
+" use neocomplete
+let g:neocomplete#enable_at_startup=1
 
 " -------------------- APPEARANCE ---------------------
 
@@ -91,10 +96,10 @@ colorscheme Tomorrow-Night
 
 " set default font in mac vim and gvim
 " remember to download the font from Powerline
-set guifont=Inconsolata\ for\ Powerline\ 16
+set guifont=Inconsolata\ for\ Powerline:h16
 
 " Allow powerline symbols to show up
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts=1
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
@@ -140,3 +145,6 @@ autocmd vimenter * NERDTree
 
 " quit vim and NERDtree when it's the only open tab
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" open with NERDTree tabs
+let g:nerdtree_tabs_open_on_console_startup=1

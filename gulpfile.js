@@ -1,24 +1,11 @@
-var gulp        = require('gulp'),
-    rename      = require('gulp-rename');
+var gulp      = require('gulp'),
+    shell     = require('gulp-shell');
 
-gulp.task('vim', function() {
-  gulp.src('./dotfiles/vimrc')
-    .pipe(rename('.vimrc'))
-    .pipe(gulp.dest('~/'))
-});
+gulp.task('vim', shell.task([
+  'rsync -av ./dotfiles/vimrc ~/.vimrc',
+  'echo Installing...',
+  'vim +PluginInstall +qall'
+  ])
+);
 
-gulp.task('vimcustom', function() {
-  gulp.src('./dotfiles/vimrcc')
-    .pipe(rename('.vimrc.custom'))
-    .pipe(gulp.dest('~/'))
-});
-
-gulp.task('vimwriter', function() {
-  gulp.src('./dotfiles/vimrcwrite')
-    .pipe(rename('.vim'))
-    .pipe(gulp.dest('~/'))
-});
-
-
-
-gulp.task('default', ['vim', 'vimcustom', 'vimwriter']);
+gulp.task('default', ['vim']);
