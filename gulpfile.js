@@ -9,7 +9,7 @@ gulp.task('vim', shell.task([
 );
 
 gulp.task('linux', shell.task([
-  'cp -i ./dotfiles/vimlinux ~/.vimrc',
+  'cp -i ./dotfiles/vimrclinux ~/.vimrc',
   'echo Installing...',
   'vim +PluginInstall +qall'
   ])
