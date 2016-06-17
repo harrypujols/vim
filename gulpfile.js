@@ -8,4 +8,11 @@ gulp.task('vim', shell.task([
   ])
 );
 
+gulp.task('linux', shell.task([
+  'rsync -av ./dotfiles/vimlinux ~/.vimrc',
+  'echo Installing...',
+  'vim +PluginInstall +qall'
+  ])
+);
+
 gulp.task('default', ['vim']);
