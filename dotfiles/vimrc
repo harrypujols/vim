@@ -135,9 +135,9 @@ if (filereadable(b:vim))
     execute "source ".b:vim
 endif
 
-" extends more settings to .vimrc.custom if available
-if filereadable(expand("~/.vimrc.custom"))
-    source ~/.vimrc.custom
+" extends settings to .vimrc_profile if available
+if filereadable(expand("~/.vimrc_profile"))
+    source ~/.vimrc_profile
 endif
 
 " executes NERDtree at startup

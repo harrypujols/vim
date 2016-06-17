@@ -8,8 +8,8 @@ gulp.task('vim', shell.task([
   ])
 );
 
-gulp.task('linux', shell.task([
-  'cp -i ./dotfiles/vimrclinux ~/.vimrc',
+gulp.task('extend', shell.task([
+  'cp -i ./dotfiles/vimrc_profile ~/.vimrc_profile',
   'echo Installing...',
   'vim +PluginInstall +qall'
   ])
