@@ -11,18 +11,19 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " start plugin defintion
-Plugin 'mattn/emmet-vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'vim-scripts/HTML-AutoCloseTag' 
-Plugin 'scrooloose/nerdTree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'shougo/neocomplete'
+Plugin 'mattn/emmet-vim'                  " zen coding on vim, yeah!
+Plugin 'vim-airline/vim-airline'          " cool status bar
+Plugin 'tpope/vim-fugitive'               " git in status bar
+Plugin 'vim-airline/vim-airline-themes'   " status bar themes
+Plugin 'flazz/vim-colorschemes'           " array of themes
+Plugin 'jiangmiao/auto-pairs'             " open and close quotes, etc
+Plugin 'vim-scripts/HTML-AutoCloseTag'    " open and close tags
+Plugin 'scrooloose/nerdTree'              " nav sidebar
+Plugin 'Xuyuanp/nerdtree-git-plugin'      " git status in nav sidebar
+Plugin 'jistr/vim-nerdtree-tabs'          " nav sidebar opens on tabs
+Plugin 'shougo/neocomplete'               " autocomplete
 
-" All Plugins must be added before the following line
+" all plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -153,5 +154,3 @@ let b:vim=b:thisdir."/.vim"
 if (filereadable(b:vim))
     execute "source ".b:vim
 endif
-
-
