@@ -8,3 +8,8 @@
 - apprentice
 - autumn
 - alduin
+- donbass
+- kolor
+- mac_classic
+- lightning
+- montz
