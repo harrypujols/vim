@@ -20,7 +20,6 @@ Plugin 'jiangmiao/auto-pairs'             " open and close quotes, etc
 Plugin 'vim-scripts/HTML-AutoCloseTag'    " open and close tags
 Plugin 'scrooloose/nerdTree'              " nav sidebar
 Plugin 'Xuyuanp/nerdtree-git-plugin'      " git status in nav sidebar
-Plugin 'jistr/vim-nerdtree-tabs'          " nav sidebar opens on tabs
 Plugin 'shougo/neocomplete'               " autocomplete
 Plugin 'tomtom/tcomment_vim'              " auto comment
 
@@ -140,12 +139,8 @@ autocmd vimenter * NERDTree
 " quit vim and NERDtree when it's the only open tab
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" open with NERDTree tabs
-let g:nerdtree_tabs_open_on_console_startup=1
-
-" NERDTree tabs focus on file when opening
-let g:nerdtree_tabs_smart_startup_focus=2
-let g:nerdtree_tabs_focus_on_files=1
+" open NERDTree with Cmd-n
+map <silent> <C-n> :NERDTreeFocus<CR>
 
 " -------------------- EXTENSIONS --------------------
 
