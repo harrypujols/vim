@@ -131,7 +131,7 @@ set incsearch
 " highlight matching brackets
 set showmatch
 
-" ---------------------- TABS -----------------------
+" ------------------- FILE TREE ---------------------
 
 " executes NERDtree at startup
 autocmd vimenter * NERDTree
