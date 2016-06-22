@@ -55,6 +55,9 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+" enable mouse in some terminals
+set mouse=a
+
 " ---------------------- EDITING ----------------------
 
 " indentation
@@ -141,6 +144,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:nerdtree_tabs_open_on_console_startup=1
 
 " NERDTree tabs focus on file when opening
+let g:nerdtree_tabs_smart_startup_focus=2
 let g:nerdtree_tabs_focus_on_files=1
 
 " -------------------- EXTENSIONS --------------------
