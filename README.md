@@ -12,7 +12,7 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 - Then `$ gulp`
 
 ## after deploying
-- You extend the config by running `gulp extend`
+- You extend the config by running `$ gulp extend`
 - Install the [Powerline fonts][3] by running
 ```bash
 $ git clone git@github.com:powerline/fonts.git
