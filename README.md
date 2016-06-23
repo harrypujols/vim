@@ -16,6 +16,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```bash
 git clone git@github.com:powerline/fonts.git
 cd fontd
+chmod +x install.sh
 ./install.sh
 ```
 - Profit.
