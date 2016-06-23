@@ -2,7 +2,7 @@
 vim settings to carry around
 
 ## to deploy
-- Make sure you got Vundle installed
+- Make sure you have Vundle installed
 ```bash
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
