@@ -13,3 +13,4 @@
 - mac_classic
 - lightning
 - montz
+- hybrid-light

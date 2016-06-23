@@ -91,6 +91,7 @@ let g:neocomplete#enable_at_startup=1
 
 " remap the comment plugin to be Ctrl-/
 map <c-/> <c-_><c-_>
+
 " -------------------- APPEARANCE ---------------------
 
 " set Airline
