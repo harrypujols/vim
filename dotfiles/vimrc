@@ -22,6 +22,7 @@ Plugin 'scrooloose/nerdTree'              " nav sidebar
 Plugin 'Xuyuanp/nerdtree-git-plugin'      " git status in nav sidebar
 Plugin 'shougo/neocomplete'               " autocomplete
 Plugin 'tomtom/tcomment_vim'              " auto comment
+Plugin 'ctrlpvim/ctrlp.vim'               " file buffer
 
 " all plugins must be added before the following line
 call vundle#end()            " required
@@ -132,6 +133,10 @@ set incsearch
 " highlight matching brackets
 set showmatch
 
+" activate Ctr-p
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " ------------------- FILE TREE ---------------------
 
 " executes NERDtree at startup
@@ -141,7 +146,7 @@ autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " open NERDTree with Cmd-n
-map <silent> <C-n> :NERDTreeFocus<CR>
+map <silent> <C-n> :NERDTreeToggle<CR>
 
 " -------------------- EXTENSIONS --------------------
 
