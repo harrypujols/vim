@@ -17,6 +17,7 @@ Plugin 'tpope/vim-fugitive'               " git in status bar
 Plugin 'vim-airline/vim-airline-themes'   " status bar themes
 Plugin 'flazz/vim-colorschemes'           " array of themes
 Plugin 'jiangmiao/auto-pairs'             " open and close quotes, etc
+Plugin 'tpope/vim-surround'               " wrap words in quotes, etc
 Plugin 'vim-scripts/HTML-AutoCloseTag'    " open and close tags
 Plugin 'scrooloose/nerdTree'              " nav sidebar
 Plugin 'Xuyuanp/nerdtree-git-plugin'      " git status in nav sidebar
@@ -74,6 +75,15 @@ set cursorline
 
 " HTML Editing
 set matchpairs+=<:>
+
+" remap the backspace button in normal mode to delete character before
+nnoremap <bs> Xi
+
+" remap spacebar to insert a space in normal mode
+nnoremap <Space> i<space><esc>
+
+" remap Ctrl-a for select all
+map <C-a> <esc>ggVG<CR>
 
 " Use tabs for Emmet
 let g:user_emmet_leader_key='<Tab>'
