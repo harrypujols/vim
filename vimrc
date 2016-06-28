@@ -113,14 +113,34 @@ set background=dark
 colorscheme Tomorrow-Night
 
 " set default font in mac vim and gvim
-" remember to download the font from Powerline
-set guifont=Inconsolata\ for\ Powerline:h16
+set guifont=Menlo:h14
 
 " Allow powerline symbols to show up
 let g:airline_powerline_fonts=1
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
+
+" start clean
+" when Powerline fonts aren't installed
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+" end clean
 
 " ---------------------- SEARCH ----------------------
 
@@ -157,18 +177,3 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " open NERDTree with Cmd-n
 map <silent> <C-n> :NERDTreeToggle<CR>
-
-" -------------------- EXTENSIONS --------------------
-
-" extends settings to .vimrc_profile if available
-if filereadable(expand("~/.vimrc_profile"))
-    source ~/.vimrc_profile
-endif
-
-" allows to put a custom .vim file in every directory
-" to load commands and options specific to that directory.
-let b:thisdir=expand("%:p:h")
-let b:vim=b:thisdir."/.vim"
-if (filereadable(b:vim))
-    execute "source ".b:vim
-endif
