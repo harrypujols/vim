@@ -13,12 +13,12 @@ def install():
         os.system("sed -i '' 's/set guifont=Menlo:h14/"+ macfont +"/g' ~/.vimrc")
         os.system("sed -i '' '/\" start clean/,/\" end clean/d' ~/.vimrc")
         os.system("vim +PuginInstall +qall")
-    elif font =="2":
+    elif font == "2":
         os.system("cp -i ./vimrc ~/vimrc")
         os.system("sed -i '' 's/set guifont=Menlo:h14/"+ linuxfont +"/g' ~/.vimrc")
         os.system("sed -i '' '/\" start clean/,/\" end clean/d' ~/.vimrc")
         os.system("vim +PuginInstall +qall")
-    elif font =="3":
+    elif font == "3":
         os.system("rsync -av ./vimrc ~/.vimrc")
         os.system("vim +PuginInstall +qall")
     else:
