@@ -7,7 +7,7 @@ def install():
     print "[3] Menlo 14"
     font = raw_input("").lower()
     macfont = r"set guifont=Inconsolata\\ for\\ Powerline:h16"
-    linuxfont = r"set guifont=Cousine\\ for\\ Powerline\\ 16"
+    linuxfont = r"set guifont=Cousine\ for\ Powerline\ 16"
     if font == "1":
         os.system("rsync -av ./vimrc ~/.vimrc")
         os.system("sed -i '' 's/set guifont=Menlo:h14/"+ macfont +"/g' ~/.vimrc")

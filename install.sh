@@ -15,7 +15,7 @@ then
   echo "Inconsolata 16 was set as default font"
 elif [ $font = "2" ]
 then
-  sed -i "" "s/Menlo:h14/Cousine\\\ for\\\ Powerline\\\ 16/g" ~/.vimrc &&
+  sed -i "" "s/Menlo:h14/Cousine\\ for\\\ Powerline\\ 16/g" ~/.vimrc &&
   sed -i "" "/\" start clean/, /\" end clean/d" ~/.vimrc &&
   echo "Cousine 16 was set as default font"
 elif [ $font = "3" ]
