@@ -28,6 +28,6 @@ $ cd fontd
 $ chmod +x install.sh
 $ ./install.sh
 ```
-- Profit.
+- profit
 
 [1]: https://powerline.readthedocs.io/en/master/installation/osx.html#vim-installation
