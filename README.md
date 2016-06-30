@@ -7,6 +7,7 @@ vim settings to carry around
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 - `cd` to this directory
+- choose the shell or python install
 
 ### to run the shell script
 ```bash
