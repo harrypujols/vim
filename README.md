@@ -1,8 +1,8 @@
 # vim
-vim settings to carry around
+opinionated personal vim preferences
 
 ## to deploy
-- Make sure you have Vundle installed
+- make sure you have Vundle installed
 ```bash
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
