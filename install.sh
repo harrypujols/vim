@@ -22,7 +22,8 @@ elif [ $font = "3" ]
 then
   echo "Menlo 14 was set as default font"
 else
-  echo "no valid selection. Menlo 14 was set as default"
+  echo "invalid selection"
+  echo "Menlo 14 was set as default font"
 fi
 
 vim +PluginInstall +qall

@@ -85,10 +85,10 @@ nnoremap <Space> i<Space><Esc>
 " remap Ctrl-a for select all
 map <C-a> <esc>ggVG<CR>
 
-" Use tabs for Emmet
+" use tabs for Emmet
 let g:user_emmet_leader_key='<Tab>'
 
-" Treat <li> and <p> tags like the block tags they are
+" treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags='li\|p'
 
 " no lines longer than 100 cols
@@ -115,31 +115,31 @@ colorscheme Tomorrow-Night
 " set default font in mac vim and gvim
 set guifont=Menlo:h14
 
-" Allow powerline symbols to show up
+" allow powerline symbols to show up
 let g:airline_powerline_fonts=1
 
-" Display extra whitespace
+" display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
 
 " start clean
 " when Powerline fonts aren't installed
 if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
+    let g:airline_symbols= {}
 endif
 
 " unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_left_sep= '»'
+let g:airline_left_sep= '▶'
+let g:airline_right_sep= '«'
+let g:airline_right_sep= '◀'
+let g:airline_symbols.linenr= '␊'
+let g:airline_symbols.linenr= '¶'
+let g:airline_symbols.linenr= '␤'
+let g:airline_symbols.branch= '⎇'
+let g:airline_symbols.paste= 'ρ'
+let g:airline_symbols.paste= 'Þ'
+let g:airline_symbols.paste= '∥'
+let g:airline_symbols.whitespace= 'Ξ'
 " end clean
 
 " ---------------------- SEARCH ----------------------
@@ -164,8 +164,8 @@ set incsearch
 set showmatch
 
 " activate Ctr-p
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_map= '<c-p>'
+let g:ctrlp_cmd= 'CtrlP'
 
 " ------------------- FILE TREE ---------------------
 
