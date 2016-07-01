@@ -121,6 +121,9 @@ let g:airline_powerline_fonts=1
 " display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
 
+" needed for tmux integration
+set term=screen-256color
+
 " start clean
 " when Powerline fonts aren't installed
 if !exists('g:airline_symbols')
