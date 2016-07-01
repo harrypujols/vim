@@ -80,7 +80,7 @@ set matchpairs+=<:>
 nnoremap <bs> Xi
 
 " remap spacebar to insert a space in normal mode
-nnoremap <Space> i<space><esc>
+nnoremap <Space> i<Space><Esc>
 
 " remap Ctrl-a for select all
 map <C-a> <esc>ggVG<CR>
@@ -154,7 +154,7 @@ set smartcase
 " hilight searches by default
 set hlsearch
 
-" Stop highlight after searching
+" stop highlight after searching
 nnoremap <silent> <leader>, :noh<cr>
 
 " find the next match as we type the search
@@ -176,4 +176,4 @@ autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " open NERDTree with Cmd-n
-map <silent> <C-n> :NERDTreeToggle<CR>
+map <silent><C-n> :NERDTreeToggle<CR>
