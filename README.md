@@ -12,7 +12,7 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ### to run the shell script
 ```bash
 $ chmod +x install.sh
-$ ./install.sh
+$ ./sh install.sh
 ```
 
 ### to run the python script
@@ -26,7 +26,7 @@ $ python install.py
 $ git clone git@github.com:powerline/fonts.git
 $ cd fontd
 $ chmod +x install.sh
-$ ./install.sh
+$ ./sh install.sh
 ```
 - profit
 
