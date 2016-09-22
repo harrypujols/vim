@@ -173,7 +173,7 @@ let g:ctrlp_cmd= 'CtrlP'
 " ------------------- FILE TREE ---------------------
 
 " executes NERDtree at startup
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 " quit vim and NERDtree when it's the only open tab
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
