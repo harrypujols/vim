@@ -11,6 +11,7 @@ def install():
     linuxfont = r"Cousine\ for\ Powerline\ 16"
 
     os.system("rsync -av ./vimrc ~/.vimrc")
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
     if font == "1":
         os.system("sed -i '' 's/Menlo:h14/"+ macfont +"/g' ~/.vimrc")
