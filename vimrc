@@ -24,6 +24,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'      " git status in nav sidebar
 Plugin 'shougo/neocomplete'               " autocomplete
 Plugin 'tomtom/tcomment_vim'              " auto comment
 Plugin 'ctrlpvim/ctrlp.vim'               " file buffer
+Plugin 'darthmall/vim-vue'                " vue.js syntax highlight
 
 " all plugins must be added before the following line
 call vundle#end()            " required
