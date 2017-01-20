@@ -83,6 +83,9 @@ set matchpairs+=<:>
 " remap the backspace button in normal mode to delete character before
 nnoremap <bs> Xi
 
+" fix backspace problem in some computers
+set backspace=2
+
 " remap spacebar to insert a space in normal mode
 nnoremap <Space> i<Space><Esc>
 
