@@ -83,7 +83,8 @@ set matchpairs+=<:>
 " remap the backspace button in normal mode to delete character before
 nnoremap <bs> Xi
 
-" fix backspace problem in some computers
+" backspace over everything in insert mode
+" set backspace=indent,eol,start
 set backspace=2
 
 " remap spacebar to insert a space in normal mode
