@@ -67,6 +67,7 @@ set term=screen-256color
 
 " indentation
 set expandtab       " use spaces instead of tabs
+set tabstop=2 shiftwidth=2 expandtab " replace tabs with spaces
 set autoindent      " autoindent based on line above, works most of the time
 set smartindent     " smarter indent for C-like languages
 set shiftwidth=4    " when reading, tabs are 4 spaces
