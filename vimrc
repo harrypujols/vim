@@ -112,6 +112,9 @@ let g:neocomplete#enable_at_startup=1
 " remap the comment plugin to be Ctrl-/
 map <c-/> <c-_><c-_>
 
+" spell checking on text and markdown
+autocmd BufEnter,BufRead,BufNewFile *.md,*.txt setlocal spell spelllang=en_us
+
 " -------------------- APPEARANCE ---------------------
 
 " set Airline
@@ -119,7 +122,7 @@ set laststatus=2
 
 " set theme
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme solarized
 
 " set default font in mac vim and gvim
 set guifont=Menlo:h14
